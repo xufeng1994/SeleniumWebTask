@@ -1,0 +1,25 @@
+{
+  "name": "seleniumwebtask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xufeng1994/SeleniumWebTask.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xufeng1994/SeleniumWebTask/issues"
+  },
+  "homepage": "https://github.com/xufeng1994/SeleniumWebTask#readme",
+  "dependencies": {
+    "chromedriver": "^2.32.2",
+    "mocha": "^3.5.3",
+    "mochawesome": "^2.3.0",
+    "selenium-webdriver": "^3.5.0"
+  }
+}
