@@ -16,7 +16,7 @@ describe('hooks', function () {
             // runs before all tests in this block
             console.log("before")
             web = new webdriver.Builder().forBrowser('chrome').setChromeOptions(new chrome.Options().headless()).build();
-            return web.executeScript(function () {
+            return web.executeScript(function() {
                 return {
                     width: window.screen.availWidth,
                     height: window.screen.availHeight
