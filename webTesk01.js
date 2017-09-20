@@ -11,7 +11,7 @@ var MongoClient = require('mongodb').MongoClient
 var assert = require('assert');
 let sunny = new Date().valueOf()
 // Connection URL 
-const url = 'mongodb://192.168.198.129:3000/node_club_dev '
+const url = 'mongodb://192.168.198.129:27017/node_club_dev'
 
 // 添加循环
 describe('hooks', function () {
@@ -21,6 +21,18 @@ describe('hooks', function () {
     before(function () {
         // runs before all tests in this block
         console.log("before")
+        web = new webdriver.Builder().forBrowser('chrome').setChromeOptions(new chrome.Options().headless()).build()
+        return web.executeScript(function () {
+            return {
+                width: window.screen.width,
+
+                height: window.screen.height
+            };
+        }).then(function (result) {
+            console.log(result.width)
+            console.log(result.height)
+            return web.manage().window().setSize(1366,768);
+        })
     })
 
 
@@ -33,36 +45,27 @@ describe('hooks', function () {
 
     });
 
-    afterEach(async function () {
+    afterEach( function () {
         // runs after each test in this block
         //在每一步完成后添加截图
-        console.log("after")
-        await web.takeScreenshot().then(function (screenshot) {
-            fs.writeFileSync(new Date().valueOf() + ".png", screenshot, "base64")
+        console.log("afterEach")
+        return web.takeScreenshot().then(function (screenshot) {
+           return  fs.writeFileSync(new Date().valueOf() + ".png", screenshot, "base64")
 
         });
     });
 
-    describe('用户登录发布话题并回复', async function () {
+    describe('用户登录发布话题并回复', function () {
         describe('注册', function () {
             it('打开网站并最大化窗口', function () {
-                web = new webdriver.Builder().forBrowser('chrome').setChromeOptions(new chrome.Options().headless()).build()
-                return web.executeScript(function () {
-                    return {
-                        width: window.screen.availWidth,
-                        height: window.screen.availHeight
-                    };
-                }).then(function (result) {
-                    
-                    //web.manage().window().setSize(result.width, result.height);
-                })
+                return web.manage().window().maximize()
             })
-            it('导航到登录页面', async function () {
-                await web.get("http://192.168.198.129:3000")
+            it('导航到登录页面',  function () {
+                return web.get("http://192.168.198.129:3000")
             });
             it('最大化窗口', async function () {
                 //await web.manage().window().maximize()
-                
+
             });
             it('点击注册按钮', async function () {
                 await web.findElement(by.xpath('/html/body/div[1]/div/div/ul/li[5]/a')).click();
@@ -96,13 +99,13 @@ describe('hooks', function () {
                         )
 
                         collection.findOne({ name: `${sunny}` }, function (err, docs) {
-                            console.log(docs.name)
+                            //console.log(docs.name)
                             assert.equal(err, null)
                             assert.equal(`${sunny}`, docs.name)
                         })
                         collection.updateOne({ name: `${sunny}` }, { $set: { "active": true } }, function (err, docs) {
                             assert.equal(null, err);
-                            console.log(docs)
+                            //console.log(docs)
                         })
                         db.close();
                     });
