@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "junitwebTask": "mocha webTesk01.js --reporter mocha-junit-reporter",
     "webTask": "mocha webTesk01.js --reporter mochawesome",
     "test2": "mocha regigistrate.js --reporter mochawesome",
     "headless": "mocha headless.js --reporter mochawesome",
@@ -23,6 +24,7 @@
     "chromedriver": "^2.32.2",
     "jenkins-mocha": "^5.0.0",
     "mocha": "^3.5.3",
+    "mocha-junit-reporter": "^1.13.0",
     "mochawesome": "^2.3.0",
     "mongodb": "^2.2.31",
     "nodemailer": "^4.1.0",

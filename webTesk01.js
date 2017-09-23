@@ -6,7 +6,7 @@ const fs = require("fs")
 const path = require("path");
 let chrome = require("selenium-webdriver/chrome")
 let web;
-const picpath = path.join(__dirname, "6789.png")
+const picpath = path.join(__dirname, "看枫傻不傻.png")
 var MongoClient = require('mongodb').MongoClient
 var assert = require('assert');
 let sunny = new Date().valueOf()
@@ -48,7 +48,7 @@ describe('hooks', function () {
     afterEach( function () {
         // runs after each test in this block
         //在每一步完成后添加截图
-        console.log("afterEach")
+        //console.log("afterEach")
         return web.takeScreenshot().then(function (screenshot) {
            return  fs.writeFileSync(new Date().valueOf() + ".png", screenshot, "base64")
 
@@ -176,7 +176,7 @@ describe('hooks', function () {
             });
             it('添加图片', async function () {
                 await web.findElement(by.css('.eicon-image')).click()
-                await web.findElement(by.name('file')).sendKeys(path.join(__dirname, "熊猫直播.png"))
+                await web.findElement(by.name('file')).sendKeys(path.join(__dirname, "辣眼睛.jpg"))
                 await web.sleep(1000)
             });
             it('添加链接', async function () {
