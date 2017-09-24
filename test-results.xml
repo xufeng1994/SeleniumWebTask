@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="14.298" tests="26" failures="0">
-  <testsuite name="Root Suite" timestamp="2017-09-23T11:43:47" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="15.441000000000003" tests="26" failures="0">
+  <testsuite name="Root Suite" timestamp="2017-09-24T04:05:06" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="hooks" timestamp="2017-09-23T11:43:47" tests="0" file="D:\AutoTest\MyProject\SeleniumWebTask\projectWithHleadless.js" failures="0" time="0">
+  <testsuite name="hooks" timestamp="2017-09-24T04:05:06" tests="0" file="D:\AutoTest\MyProject\SeleniumWebTask\webTesk01.js" failures="0" time="0">
   </testsuite>
-  <testsuite name="用户登录发布话题并回复" timestamp="2017-09-23T11:43:51" tests="0" file="D:\AutoTest\MyProject\SeleniumWebTask\projectWithHleadless.js" failures="0" time="0">
+  <testsuite name="用户登录发布话题并回复" timestamp="2017-09-24T04:05:11" tests="0" file="D:\AutoTest\MyProject\SeleniumWebTask\webTesk01.js" failures="0" time="0">
   </testsuite>
-  <testsuite name="注册" timestamp="2017-09-23T11:43:51" tests="8" file="D:\AutoTest\MyProject\SeleniumWebTask\projectWithHleadless.js" failures="0" time="4.115">
-    <testcase name="hooks 用户登录发布话题并回复 注册 打开网站并最大化窗口" time="0.122" classname="打开网站并最大化窗口">
+  <testsuite name="注册" timestamp="2017-09-24T04:05:11" tests="8" file="D:\AutoTest\MyProject\SeleniumWebTask\webTesk01.js" failures="0" time="4.672000000000001">
+    <testcase name="hooks 用户登录发布话题并回复 注册 打开网站并最大化窗口" time="0.107" classname="打开网站并最大化窗口">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 注册 导航到登录页面" time="1.858" classname="导航到登录页面">
+    <testcase name="hooks 用户登录发布话题并回复 注册 导航到登录页面" time="2.194" classname="导航到登录页面">
     </testcase>
     <testcase name="hooks 用户登录发布话题并回复 注册 最大化窗口" time="0" classname="最大化窗口">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 注册 点击注册按钮" time="0.49" classname="点击注册按钮">
+    <testcase name="hooks 用户登录发布话题并回复 注册 点击注册按钮" time="0.701" classname="点击注册按钮">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 注册 输入用户名" time="0.237" classname="输入用户名">
+    <testcase name="hooks 用户登录发布话题并回复 注册 输入用户名" time="0.302" classname="输入用户名">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 注册 输入密码并确认密码" time="0.281" classname="输入密码并确认密码">
+    <testcase name="hooks 用户登录发布话题并回复 注册 输入密码并确认密码" time="0.255" classname="输入密码并确认密码">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 注册 输入邮箱" time="0.201" classname="输入邮箱">
+    <testcase name="hooks 用户登录发布话题并回复 注册 输入邮箱" time="0.189" classname="输入邮箱">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 注册 点击注册并发送邮件" time="0.926" classname="点击注册并发送邮件">
-    </testcase>
-  </testsuite>
-  <testsuite name="登录" timestamp="2017-09-23T11:43:58" tests="4" file="D:\AutoTest\MyProject\SeleniumWebTask\projectWithHleadless.js" failures="0" time="1.625">
-    <testcase name="hooks 用户登录发布话题并回复 登录 进入登录界面" time="0.418" classname="进入登录界面">
-    </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 登录 输入账号" time="0.137" classname="输入账号">
-    </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 登录 输入密码" time="0.128" classname="输入密码">
-    </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 登录 点击登录" time="0.942" classname="点击登录">
+    <testcase name="hooks 用户登录发布话题并回复 注册 点击注册并发送邮件" time="0.924" classname="点击注册并发送邮件">
     </testcase>
   </testsuite>
-  <testsuite name="发布话题" timestamp="2017-09-23T11:44:01" tests="7" file="D:\AutoTest\MyProject\SeleniumWebTask\projectWithHleadless.js" failures="0" time="4.138">
-    <testcase name="hooks 用户登录发布话题并回复 发布话题 点击发布话题进入编辑界面" time="0.698" classname="点击发布话题进入编辑界面">
+  <testsuite name="登录" timestamp="2017-09-24T04:05:19" tests="4" file="D:\AutoTest\MyProject\SeleniumWebTask\webTesk01.js" failures="0" time="2.086">
+    <testcase name="hooks 用户登录发布话题并回复 登录 进入登录界面" time="0.345" classname="进入登录界面">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 发布话题 选择模块" time="0.278" classname="选择模块">
+    <testcase name="hooks 用户登录发布话题并回复 登录 输入账号" time="0.123" classname="输入账号">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 发布话题 输入标题" time="0.327" classname="输入标题">
+    <testcase name="hooks 用户登录发布话题并回复 登录 输入密码" time="0.174" classname="输入密码">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 发布话题 输入正文" time="0.324" classname="输入正文">
-    </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 发布话题 添加网址链接" time="1.603" classname="添加网址链接">
-    </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 发布话题 添加图片" time="0.124" classname="添加图片">
-    </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 发布话题 点击提交" time="0.784" classname="点击提交">
+    <testcase name="hooks 用户登录发布话题并回复 登录 点击登录" time="1.444" classname="点击登录">
     </testcase>
   </testsuite>
-  <testsuite name="添加回复" timestamp="2017-09-23T11:44:08" tests="7" file="D:\AutoTest\MyProject\SeleniumWebTask\projectWithHleadless.js" failures="0" time="4.42">
-    <testcase name="hooks 用户登录发布话题并回复 添加回复 进入回复编辑界面" time="0.112" classname="进入回复编辑界面">
+  <testsuite name="发布话题" timestamp="2017-09-24T04:05:22" tests="7" file="D:\AutoTest\MyProject\SeleniumWebTask\webTesk01.js" failures="0" time="4.439">
+    <testcase name="hooks 用户登录发布话题并回复 发布话题 点击发布话题进入编辑界面" time="1.016" classname="点击发布话题进入编辑界面">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 添加回复 输入正文" time="0.093" classname="输入正文">
+    <testcase name="hooks 用户登录发布话题并回复 发布话题 选择模块" time="0.563" classname="选择模块">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 添加回复 添加图片" time="1.178" classname="添加图片">
+    <testcase name="hooks 用户登录发布话题并回复 发布话题 输入标题" time="0.234" classname="输入标题">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 添加回复 添加链接" time="1.052" classname="添加链接">
+    <testcase name="hooks 用户登录发布话题并回复 发布话题 输入正文" time="0.276" classname="输入正文">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 添加回复 输入标题" time="0.08" classname="输入标题">
+    <testcase name="hooks 用户登录发布话题并回复 发布话题 添加网址链接" time="1.47" classname="添加网址链接">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 添加回复 输入网址" time="1.246" classname="输入网址">
+    <testcase name="hooks 用户登录发布话题并回复 发布话题 添加图片" time="0.18" classname="添加图片">
     </testcase>
-    <testcase name="hooks 用户登录发布话题并回复 添加回复 提交回复" time="0.659" classname="提交回复">
+    <testcase name="hooks 用户登录发布话题并回复 发布话题 点击提交" time="0.7" classname="点击提交">
+    </testcase>
+  </testsuite>
+  <testsuite name="添加回复" timestamp="2017-09-24T04:05:29" tests="7" file="D:\AutoTest\MyProject\SeleniumWebTask\webTesk01.js" failures="0" time="4.244000000000001">
+    <testcase name="hooks 用户登录发布话题并回复 添加回复 进入回复编辑界面" time="0.089" classname="进入回复编辑界面">
+    </testcase>
+    <testcase name="hooks 用户登录发布话题并回复 添加回复 输入正文" time="0.078" classname="输入正文">
+    </testcase>
+    <testcase name="hooks 用户登录发布话题并回复 添加回复 添加图片" time="1.12" classname="添加图片">
+    </testcase>
+    <testcase name="hooks 用户登录发布话题并回复 添加回复 添加链接" time="1.065" classname="添加链接">
+    </testcase>
+    <testcase name="hooks 用户登录发布话题并回复 添加回复 输入标题" time="0.092" classname="输入标题">
+    </testcase>
+    <testcase name="hooks 用户登录发布话题并回复 添加回复 输入网址" time="1.223" classname="输入网址">
+    </testcase>
+    <testcase name="hooks 用户登录发布话题并回复 添加回复 提交回复" time="0.577" classname="提交回复">
     </testcase>
   </testsuite>
 </testsuites>
