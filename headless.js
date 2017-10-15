@@ -1,4 +1,4 @@
-require('chromedriver')
+﻿require('chromedriver')
 const webdriver = require('selenium-webdriver')
 let until = webdriver.until;
 const by = webdriver.By;
@@ -6,7 +6,7 @@ const fs = require("fs")
 const path = require("path");
 let chrome = require("selenium-webdriver/chrome")
 let web;
-// const web = new webdriver.Builder().forBrowser('chrome').build();
+const web = new webdriver.Builder().forBrowser('chrome').build();
 const picpath = path.join(__dirname, "看枫傻不傻.png")
 var assert = require('assert');
 describe('hooks', function () {
